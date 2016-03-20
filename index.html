@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SportStore</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <!-- Bootstrap -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+
+<body>
+  <div id="up"></div>
+  <header>
+    <!-- верхняя линия (лого, иконки соцсетей, поиск) -->
+    <div class="row firstLine">
+      <div class="container">
+        <div class="logo">
+          <h1>BIG<br><span>Store</span></h1>
+          <img src="images/logo-shadow.png">
+        </div>
+
+        <div class="col-lg-5 col-md-12 col-sm-12 col-xs-12">
+          <div class="col-lg-7 col-md-12 col-sm-12 col-xs-12">
+            <ul class="social-network social-circle">
+              <li><a href="#" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+              <li><a href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+              <li><a href="#" class="icoDribble" title="Dribble"><i class="fa fa-dribbble"></i></a></li>
+              <li><a href="#" class="icoLastfm" title="Lastfm"><i class="fa fa-lastfm"></i></a></li>
+              <li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+              <li><a href="#" class="icoTumbler" title="Tumbler"><i class="fa fa-tumblr"></i></a></li>
+            </ul>
+          </div>
+          <div class="col-lg-5 col-md-12 col-sm-12 col-xs-12">
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="Search">
+              <span class="input-group-btn">
+                      <button class="btn btn-default" type="button"></button>
+                    </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- вторая линия (меню)  -->
+    <div class="row secondLine">
+      <div class="container">
+        <ul class="nav nav-pills">
+          <li><a href="#">Enteraiment</a></li>
+          <li><a href="#">LifeStyle</a></li>
+          <li><a href="#">Technology</a></li>
+          <li><a href="#">Enteraiment</a></li>
+          <li><a href="#">LifeStyle</a></li>
+          <li><a href="#">Sports</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- третья линия (дополнительня информация, количество товаров в корзине) -->
+    <div class="row thirdLine">
+      <div class="container">
+        <div class="col-lg-9 col-md-12">
+          <p>August .12 .2012 - Syrian prime minister defects, fighting goes on</p>
+        </div>
+        <div class="col-lg-3 col-md-12">
+          <p>Shopping Cart: <span class="items">0</span> item(s) - $<span>0.00</span></p>
+          <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+              </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenu">
+          </ul>
+          <div class="clearfix"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="clearfix"></div>
+  </header>
+
+  <!-- основной контент -->
+  <div class="content">
+    <div class="container">
+      <!-- карусель с товарами -->
+      <div class="row banner">
+        <div class="col-lg-12">
+          <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner" role="listbox">
+              <div class="item active">
+                <div class="jumbotron">
+                  <div class="col-lg-6">
+                    <img src="images/boots.png">
+                  </div>
+                  <div class="col-lg-6">
+                    <h1>Where can I get some?</h1>
+                    <p>Fusce ultrices ornare velit, consectetur tempus eros dapibus et. Integer lobortis, dui in iaculis sollicitudin, felis nunc aliquam nibh, eu porta nisi urna nec odio. Duis suscipit viverra magna id sagittis. Quisque odio neque, condimentum
+                      cursus volutpat vel, pharetra ac nibh. Cras cursus libero id nunc facilisis luctus. Aenean ultricies, risus cursus sollicitudin congue, diam diam congue velit, ut sodales sem enim a nisl. Aenean elit diam, mollis fermentum </p>
+                    <p><a class="btn btn-primary btn-lg" href="#" role="button">Shop Now &raquo;</a></p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="item">
+                <div class="jumbotron">
+                  <div class="col-lg-6">
+                    <img src="images/boots.png">
+                  </div>
+                  <div class="col-lg-6">
+                    <h1>Where can I get some?</h1>
+                    <p>Fusce ultrices ornare velit, consectetur tempus eros dapibus et. Integer lobortis, dui in iaculis sollicitudin, felis nunc aliquam nibh, eu porta nisi urna nec odio. Duis suscipit viverra magna id sagittis. Quisque odio neque, condimentum
+                      cursus volutpat vel, pharetra ac nibh. Cras cursus libero id nunc facilisis luctus. Aenean ultricies, risus cursus sollicitudin congue, diam diam congue velit, ut sodales sem enim a nisl. Aenean elit diam, mollis fermentum </p>
+                    <p><a class="btn btn-primary btn-lg" href="#" role="button">Shop Now &raquo;</a></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Новые продукты -->
+      <div class="row newItem">
+        <div class="col-lg-3 featured">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <p>Featured</p>
+              <div class="btn-group" role="group" aria-label="...">
+                <button type="button" class="btn btn-default" id="btnLeft"></button>
+                <button type="button" class="btn btn-default" id="btnRight"></button>
+              </div>
+              <div class="clearfix"></div>
+            </div>
+            <div class="panel-body">
+              <div class="row">
+                <div class="col-lg-12">
+                  <div class="thumbnail">
+                    <div class="imgWrapper"><img src="images/featured-photo.png" alt="boots"></div>
+                    <div class="caption">
+                      <h3>Herbal Sport</h3>
+                      <div class="row">
+                        <p class="col-lg-8">
+                          <span class="price">$101.88</span>
+                          <span class="price exPrice">$69.99</span>
+                        </p>
+                      </div>
+                      <a href="#" class="btn btn-default buyBtn" role="button"></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-9 col-md-12 col-sm-12 col-xs-12 newProducts">
+          <div class="col-lg-12">
+            <div class="panel panel-default">
+              <div class="panel-heading">new products</div>
+              <div class="panel-body">
+                <div class="row">
+                  <div class="col-lg-4">
+                    <div class="thumbnail">
+                      <div class="imgWrapper"><img src="images/new1.png" alt="boots"></div>
+                      <div class="caption">
+                        <div class="row">
+                          <div class="col-lg-12">
+                            <h3 class="col-lg-8">Lorem ipsum dolor sit</h3>
+                            <p class="col-lg-8">
+                              <span class="price exPrice">$69.99</span>
+                              <span class="price">$34.99</span>
+                            </p>
+                          </div>
+                        </div>
+                        <a href="#" class="btn btn-default buyBtn bought" role="button"></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="thumbnail">
+                      <div class="imgWrapper"><img src="images/new2.png" alt="boots"></div>
+                      <div class="caption">
+                        <div class="row">
+                          <div class="col-lg-12">
+                            <h3 class="col-lg-8">Lorem ipsum dolor sit</h3>
+                            <p class="col-lg-8">
+                              <span class="price">$34.99</span>
+                            </p>
+                          </div>
+                        </div>
+                        <a href="#" class="btn btn-default buyBtn bought" role="button"></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="thumbnail">
+                      <div class="imgWrapper"><img src="images/new3.png" alt="boots"></div>
+                      <div class="caption">
+                        <div class="row">
+                          <div class="col-lg-12">
+                            <h3 class="col-lg-8">Lorem ipsum dolor sit</h3>
+                            <p class="col-lg-8">
+                              <span class="price">$34.99</span>
+                            </p>
+                          </div>
+                        </div>
+                        <a href="#" class="btn btn-default buyBtn bought" role="button"></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div id="scale">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- меню актуальных товаров-->
+      <div class="row sale">
+        <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12 categories">
+          <div class="panel panel-default">
+            <div class="panel-heading">Trending now</div>
+            <div class="panel-body">
+              <div class="list-group">
+                <a href="#" class="list-group-item active">Man</a>
+                <a href="#" class="list-group-item">Woman</a>
+                <a href="#" class="list-group-item">Kids</a>
+                <a href="#" class="list-group-item">Accesories</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-9 col-md-12 col-sm-12 col-xs-12 products">
+          <div class="col-lg-6">
+            <div class="thumbnail">
+              <img class="col-lg-6" src="images/sale11.png" alt="...">
+              <div class="caption col-lg-5">
+                <h3>Shop t-shirt</h3>
+                <p>Lorem ipsum dolor sit amet, consectetuer</p>
+                <p>
+                  <span class="price exPrice">$34.99</span>
+                  <span class="price">$34.99</span>
+                </p>
+                <a href="#" class="btn btn-default" role="button"><span class="buyBtn bought"></span>Add to cart</a>
+                </p>
+              </div>
+              <div class="clearfix"></div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="thumbnail">
+              <img class="col-lg-6" src="images/sale22.png" alt="...">
+              <div class="caption col-lg-5">
+                <h3>Sneaker</h3>
+                <p>Lorem ipsum dolor sit amet, consectetuer</p>
+                <p>
+                  <span class="price">$34.99</span>
+                </p>
+                <p><a href="#" class="btn btn-default" role="button"><span class="buyBtn bought"></span>Add to cart</a></p>
+              </div>
+              <div class="clearfix"></div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="thumbnail">
+              <img class="col-lg-6" src="images/sale33.png" alt="...">
+              <div class="caption col-lg-5">
+                <h3>Backpack</h3>
+                <p>Lorem ipsum dolor sit amet, consectetuer</p>
+                <p>
+                  <span class="price">$34.99</span>
+                </p>
+                <p><a href="#" class="btn btn-default" role="button"><span class="buyBtn bought"></span>Add to cart</a></p>
+              </div>
+              <div class="clearfix"></div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="thumbnail">
+              <img class="col-lg-6" src="images/sale44.png" alt="...">
+              <div class="caption col-lg-5">
+                <h3>Heritage</h3>
+                <p>Lorem ipsum dolor sit amet, consectetuer</p>
+                <p>
+                  <span class="price">$34.99</span>
+                </p>
+                <p><a href="#" class="btn btn-default" role="button"><span class="buyBtn bought"></span>Add to cart</a></p>
+              </div>
+              <div class="clearfix"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- партнеры -->
+  <div class="row info">
+    <div class="container">
+      <div class="col-lg-12">
+        <div class="panel panel-default">
+          <div class="panel-heading partners">
+            <div class="col-lg-1">
+              <button type="button" class="btn btn-default"></button>
+            </div>
+            <div class="col-lg-10">
+              <img src="images/sponsor1.png" class="img-responsive" alt="Cinque Terre" width="182">
+              <img src="images/sponsor2.png" class="img-responsive" alt="Cinque Terre" width="269">
+              <img src="images/sponsor3.png" class="img-responsive" alt="Cinque Terre" width="201">
+              <img src="images/sponsor1.png" class="img-responsive" alt="Cinque Terre" width="182">
+            </div>
+            <div class="col-lg-1">
+              <button type="button" class="btn btn-default"></button>
+            </div>
+            <div class="clearfix"></div>
+          </div>
+          <div class="panel-body">
+            <div class="col-lg-4">
+              <div class="panel panel-default about">
+                <!-- информация о магазине -->
+                <div class="panel-heading">Who We Are</div>
+                <div class="panel-body">
+                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
+                    book. It has </p>
+                  <p class="highLine">Address 123, Country</p>
+                  <p class="highLine">(043) 875-9211</p>
+                  <p class="highLine">info@kopasoft.com</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="panel panel-default">
+                <div class="panel-heading">Categories</div>
+                <div class="panel-body">
+                  <table class="table">
+                    <tr>
+                      <td>
+                        <div><a href="#">New collection</a></div>
+                      </td>
+                      <td>
+                        <div><a href="#">New collection</a></div>
+                      </td>
+                      <td>
+                        <div><a href="#">New collection</a></div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div><a href="#">Best sellers</a></div>
+                      </td>
+                      <td>
+                        <div><a href="#">Best sellers</a></div>
+                      </td>
+                      <td>
+                        <div><a href="#">Best sellers</a></div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div><a href="#">Manufactures</a></div>
+                      </td>
+                      <td>
+                        <div><a href="#">Manufactures</a></div>
+                      </td>
+                      <td>
+                        <div><a href="#">Manufactures</a></div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div><a href="#">Suppliers</a></div>
+                      </td>
+                      <td>
+                        <div><a href="#">Suppliers</a></div>
+                      </td>
+                      <td>
+                        <div><a href="#">Suppliers</a></div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div><a href="#">New products</a></div>
+                      </td>
+                      <td>
+                        <div><a href="#">New products</a></div>
+                      </td>
+                      <td>
+                        <div><a href="#">New products</a></div>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="panel panel-default tweet">
+                <div class="panel-heading">Latest Tweet</div>
+                <div class="panel-body">
+                  <ul class="list-group">
+                    <li class="list-group-item">Check out this great #themeforest item for you 'Simpler Landing' http://t.co/LbLwldb6 2 hours ago</li>
+                    <li class="list-group-item">Check out this great #themeforest item for you 'Simpler Landing' http://t.co/LbLwldb6 2 hours ago</li>
+                    <li class="list-group-item">Check out this great #themeforest item for you 'Simpler Landing' http://t.co/LbLwldb6 2 hours ago</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
+          <p>Copyrights. © 2012 by KOPASOFT</p>
+        </div>
+        <div class="col-lg-9 col-md-12 col-sm-12 col-xs-12">
+          <ul class="nav nav-pills">
+            <li role="presentation"><a href="#">Home</a></li>
+            <li role="presentation"><a href="#">My Cart</a></li>
+            <li role="presentation"><a href="#">Checkout</a></li>
+            <li role="presentation"><a href="#">Completed Orders</a></li>
+            <li role="presentation"><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <a href="#up"></a>
+  </footer>
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
